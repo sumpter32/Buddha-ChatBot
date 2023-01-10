@@ -30,7 +30,7 @@ function typeText(element, text) {
         } else {
             clearInterval(interval)
         }
-    }, 20)
+    }, 1)
 }
 
 // generate unique ID for each message div of bot
@@ -86,7 +86,7 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('https://srs-chat-bot.onrender.com/', {
+    const response = await fetch('https://buddha.onrender.com/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
